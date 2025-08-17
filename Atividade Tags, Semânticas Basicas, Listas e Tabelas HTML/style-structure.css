@@ -1,0 +1,190 @@
+body {
+  background-color: #272822;
+  color: #f8f8f2;
+  margin: 0;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+table {
+  text-align: left;
+  margin-left: 42px;
+  margin-right: 24px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul,
+ol {
+  padding-left: 40px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  background-color: #414339;
+  color: #e0e0e0;
+}
+
+caption {
+  padding: 8px 12px;
+  color: #f8f8f2;
+  font-weight: 600;
+}
+
+th {
+  font-weight: 600;
+  border: 1px solid #333;
+  background-color: #2d2f28;
+  padding: 8px 12px;
+}
+
+td {
+  border: 1px solid #555;
+  padding: 8px 12px;
+}
+
+a {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: fit-content;
+  background-color: #2d2f28;
+  color: #f8f8f2;
+  padding: 8px 18px;
+  margin-top: 24px;
+  margin-bottom: 42px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+a:hover,
+a:focus {
+  background-color: #414339;
+  color: #ffd866;
+}
+
+a#github-link {
+  background: none;
+  color: #f8f8f2;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  font-weight: 600;
+  box-shadow: none;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a#github-link:hover,
+a#github-link:focus {
+  color: #ffd866;
+  border-color: #ffd866;
+}
+
+header {
+  background-color: #2d2f28;
+  padding: 24px 0 12px 0;
+  text-align: center;
+  border-bottom: 2px solid #414339;
+}
+
+header h2 {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #272822;
+  padding: 12px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #414339;
+}
+
+nav a {
+  background: none;
+  color: #ffd866;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  box-shadow: none;
+  margin: 0;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #414339;
+  color: #f8f8f2;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 24px 0;
+  min-height: 60vh;
+}
+
+#recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+}
+
+img {
+  width: 30%;
+  height: 30%;
+  border-radius: 8px;
+  margin: 0 24px 24px 24px;
+}
+
+footer {
+  background-color: #2d2f28;
+  color: #a6a6a6;
+  border-top: 2px solid #414339;
+  font-size: 0.95em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 32px;
+}
+
+footer p {
+  margin: 24px 10px;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-layout.css" />
+    <title>Atividade Semântica</title>
+  </head>
+  <body>
+    <h1>Atividade Semântica</h1>
+    <section>
+      <h2>4. Layout Semântico</h2>
+      <header>
+        <h2>ESCOLA SOFTEX</h2>
+      </header>
+      <main>
+        <div id="grades">
+          <h2>Notas</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Aluno</th>
+                <th align="right">Nota</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>João</td>
+                <td align="right">8.5</td>
+              </tr>
+              <tr>
+                <td>Maria</td>
+                <td align="right">9.0</td>
+              </tr>
+              <tr>
+                <td>Pedro</td>
+                <td align="right">7.5</td>
+              </tr>
+              <tr>
+                <td>Ana</td>
+                <td align="right">8.0</td>
+              </tr>
+              <tr>
+                <td>Carlos</td>
+                <td align="right">7.8</td>
+              </tr>
+              <tr>
+                <td>Fernanda</td>
+                <td align="right">9.2</td>
+              </tr>
+              <tr>
+                <td>Lucas</td>
+                <td align="right">6.9</td>
+              </tr>
+              <tr>
+                <td>Juliana</td>
+                <td align="right">8.7</td>
+              </tr>
+            </tbody>
+          </table>
+          <form>
+            <label for="student-name">Nome do Aluno:</label>
+            <input type="text" id="student-name" name="student-name" required />
+            <label for="student-grade">Nota:</label>
+            <input
+              type="number"
+              id="student-grade"
+              name="student-grade"
+              step="0.1"
+              required
+            />
+            <button type="submit">Adicionar Nota</button>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <p>Página criada por:</p>
+          <a
+            id="github-link"
+            href="https://github.com/guilhermechroma"
+            target="_blank"
+            >guilhermechroma</a
+          >
+        </div>
+      </footer>
+      <div>
+        <a href="index-structure.html">Exercício Anterior</a>
+      </div>
+    </section>
+  </body>
+</html>
