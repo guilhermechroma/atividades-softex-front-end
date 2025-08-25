@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-mercado.css" />
+    <title>Exercício 03</title>
+  </head>
+  <body>
+    <h1>Supermercado</h1>
+    <section>
+      <h2>Ala de Higiene</h2>
+      <div class="produtos">
+        <div class="produto">
+          <h3>Shampoo</h3>
+          <p>R$ 20,00</p>
+          <span class="desconto">50% OFF no 3º item!</span>
+          <button onclick="adicionarAoCarrinho('Shampoo', 20)">
+            Adicionar ao carrinho
+          </button>
+        </div>
+        <div class="produto">
+          <h3>Sabonete</h3>
+          <p>R$ 5,00</p>
+          <span class="desconto">50% OFF no 3º item!</span>
+          <button onclick="adicionarAoCarrinho('Sabonete', 5)">
+            Adicionar ao carrinho
+          </button>
+        </div>
+        <div class="produto">
+          <h3>Pasta de Dente</h3>
+          <p>R$ 8,00</p>
+          <span class="desconto">50% OFF no 3º item!</span>
+          <button onclick="adicionarAoCarrinho('Pasta de Dente', 8)">
+            Adicionar ao carrinho
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Carrinho</h2>
+      <ul id="carrinho"></ul>
+      <p id="desconto"></p>
+      <p id="total"></p>
+    </section>
+
+    <button type="submit" class="comprar">Comprar</button>
+
+    <a href="../ex-02/index-lan.html" class="botao-fixo"
+      >Ir para Exercício 02</a
+    >
+
+    <script src="script-mercado.js"></script>
+  </body>
+</html>

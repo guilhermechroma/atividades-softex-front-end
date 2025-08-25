@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-farmacia.css" />
+    <title>Exercício 01</title>
+  </head>
+  <body>
+    <h1>Farmácia</h1>
+    <div id="lista-medicamentos">
+      <div class="medicamento">
+        <h3>Dipirona</h3>
+        <p>Preço: R$ 5,00</p>
+        <button class="add-carrinho" data-nome="Dipirona" data-preco="5.00">
+          Adicionar ao Carrinho
+        </button>
+      </div>
+      <div class="medicamento">
+        <h3>Paracetamol</h3>
+        <p>Preço: R$ 4,50</p>
+        <button class="add-carrinho" data-nome="Paracetamol" data-preco="4.50">
+          Adicionar ao Carrinho
+        </button>
+      </div>
+      <div class="medicamento">
+        <h3>Ibuprofeno</h3>
+        <p>Preço: R$ 8,00</p>
+        <button class="add-carrinho" data-nome="Ibuprofeno" data-preco="8.00">
+          Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+
+    <h2>Carrinho</h2>
+    <ul class="carrinho-lista"></ul>
+    <div class="promocao"></div>
+    <div class="total"></div>
+
+    <button type="submit" class="comprar">Comprar</button>
+
+    <div class="resultado">Total: R$ 0.00</div>
+
+    <a href="../ex-02/index-lan.html" class="botao-fixo"
+      >Ir para Exercício 02</a
+    >
+
+    <script src="script-farmacia.js"></script>
+  </body>
+</html>
