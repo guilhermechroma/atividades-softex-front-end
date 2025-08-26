@@ -1,0 +1,12 @@
+body {
+    background-color: #345037;
+}
+
+#nome {
+    color: lime;
+    font-size: x-large;
+}
+
+.bio {
+    color: #fff;
+}

@@ -1,0 +1,15 @@
+.caixa {
+    border: solid black;
+}
+
+#caixa1 {
+    background-color: blue;
+}
+
+#caixa2 {
+    background-color: green;
+}
+
+#caixa3 {
+    background-color: red;
+}
