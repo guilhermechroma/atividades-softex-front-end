@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+body {
+  background-color: rgb(200, 206, 198);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+label {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+button {
+  border-radius: 10px;
+}
+
+.calculadora {
+  background-color: rgb(224, 233, 220);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #b0b8a3;
+  width: 267px;
+}
+
+#display {
+  background-color: rgb(245, 248, 244);
+  border: solid 1px rgb(209, 211, 208);
+  border-radius: 10px;
+  width: 90%;
+  height: 40px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.botoes {
+  display: flex;
+}
+
+.botoes button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.principal button {
+  background-color: rgb(154, 233, 175);
+}
+
+.principal button:hover {
+  background-color: rgb(132, 201, 150);
+}
+
+.digitos button {
+  background-color: rgb(255, 255, 255);
+}
+
+.digitos button:hover {
+  background-color: rgb(203, 223, 193);
+}
+
+.lateral button {
+  background-color: rgb(154, 233, 175);
+}
+
+.lateral button:hover {
+  background-color: rgb(132, 201, 150);
+}
+
+#calcular {
+  background-color: rgb(247, 210, 155);
+}
+
+#calcular:hover {
+  background-color: rgb(223, 187, 135);
+}
+
+#trocaTema {
+  position: fixed;
+  top: 0;
+  width: 50px;
+  height: auto;
+  margin-top: 50px;
+  cursor: pointer;
+}

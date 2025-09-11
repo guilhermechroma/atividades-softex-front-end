@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mini Calculadora</title>
+        <link id="tema" rel="stylesheet" href="./styles/light.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <img
+            id="trocaTema"
+            onclick="trocarTema()"
+            src="./assets/lampada.svg"
+            alt="lampada"
+        />
+        <div class="calculadora">
+            <label for="display">Calculadora</label>
+            <input type="text" id="display" disabled />
+            <div class="botoes">
+                <div class="principal">
+                    <button onclick="apagar()"><-</button>
+                    <button onclick="limpar()">C</button>
+                    <button onclick="inverter()">±</button>
+                    <div class="digitos">
+                        <button onclick="adicionar('7')">7</button>
+                        <button onclick="adicionar('8')">8</button>
+                        <button onclick="adicionar('9')">9</button>
+                        <button onclick="adicionar('4')">4</button>
+                        <button onclick="adicionar('5')">5</button>
+                        <button onclick="adicionar('6')">6</button>
+                        <button onclick="adicionar('1')">1</button>
+                        <button onclick="adicionar('2')">2</button>
+                        <button onclick="adicionar('3')">3</button>
+                        <button onclick="adicionar('(')">(</button>
+                        <button onclick="adicionar('0')">0</button>
+                        <button onclick="adicionar(')')">)</button>
+                    </div>
+                </div>
+
+                <div class="lateral">
+                    <button onclick="adicionar('+')">+</button>
+                    <button onclick="adicionar('-')">-</button>
+                    <button onclick="adicionar('*')">*</button>
+                    <button onclick="adicionar('/')">/</button>
+                    <button id="calcular" onclick="calcular()">=</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+body {
+  background-color: #272822;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+label {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+button {
+  border-radius: 10px;
+}
+
+.calculadora {
+  background-color: #3e3d32;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0b0b0a;
+  width: 267px;
+}
+
+#display {
+  background-color: #34352f;
+  border: solid 1px #1a1b18;
+  border-radius: 10px;
+  width: 90%;
+  height: 40px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.botoes {
+  display: flex;
+}
+
+.botoes button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.principal button {
+  background-color: #77a320;
+}
+
+.principal button:hover {
+  background-color: #658b17;
+}
+
+.digitos button {
+  background-color: #8b8e7a;
+}
+
+.digitos button:hover {
+  background-color: #757863;
+}
+
+.lateral button {
+  background-color: #77a320;
+}
+
+.lateral button:hover {
+  background-color: #658b17;
+}
+
+#calcular {
+  background-color: #a37320;
+}
+
+#calcular:hover {
+  background-color: #8b6917;
+}
+
+#trocaTema {
+  position: fixed;
+  filter: invert(100%);
+  top: 0;
+  width: 50px;
+  height: auto;
+  margin-top: 50px;
+  cursor: pointer;
+}
