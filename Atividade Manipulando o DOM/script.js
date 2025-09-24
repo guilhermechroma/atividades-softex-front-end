@@ -11,28 +11,21 @@ function contarLista() {
         itens.push(item.textContent);
     });
     console.log(`Lista (${itens.length} itens): ${itens}`);
-
-    // EVENT LISTENER PARA CHECAR QUAL ITEM ESTÁ COM MOUSE EM CIMA E DESTACÁ-LO
-    listaItens.forEach((item) => {
-        item.addEventListener("mouseover", () => {
-            item.classList.add("destaque"); // Add a CSS class for styling
-        });
-
-        item.addEventListener("mouseout", () => {
-            item.classList.remove("destaque"); // Remove the CSS class
-        });
-    });
 }
 
 function adicionarProduto() {
-    // PARA ADICIONAR O ITEM NA LISTA DO HTML
-    let item = document.createElement("li");
-    item.classList.add("item");
-    item.textContent = input.value;
-    lista.appendChild(item);
+    // APENAS ADICIONA PRODUTO SE INPUT NÃO ESTIVER VAZIO
+    if (input.value !== "") {
+        // PARA ADICIONAR O ITEM NA LISTA DO HTML
+        let item = document.createElement("li");
+        item.classList.add("item");
+        item.textContent = input.value;
+        lista.appendChild(item);
+        input.value = "";
 
-    // ATUALIZAR A CONTAGEM DE ITENS DA LISTA NO CONSOLE
-    contarLista();
+        // ATUALIZAR A CONTAGEM DE ITENS DA LISTA NO CONSOLE
+        contarLista();
+    }
 }
 
 function limparLista() {
@@ -45,6 +38,29 @@ function limparLista() {
 
 // INICIALIZAR A CONTAGEM DE ITENS DA LISTA NO CONSOLE
 contarLista();
+
+// EVENT LISTENER PARA CHECAR QUAL ITEM ESTÁ COM MOUSE EM CIMA E DESTACÁ-LO
+lista.addEventListener("mouseover", (e) => {
+    if (e.target.tagName === "LI") {
+        e.target.classList.add("destaque");
+    }
+});
+
+// EVENT LISTENER PARA CHECAR SE O MOUSE SAIU DE CIMA DO ITEM E REMOVER SEU DESTAQUE
+lista.addEventListener("mouseout", (e) => {
+    if (e.target.tagName === "LI") {
+        e.target.classList.remove("destaque");
+    }
+});
+
+// EVENT LISTENER PARA CHECAR DUPLO CLIQUE E REMOVER O ITEM SELECIONADO
+lista.addEventListener("dblclick", (e) => {
+    if (e.target.tagName === "LI") {
+        // e.target é o item "li" que foi clicado duas vezes
+        e.target.parentNode.removeChild(e.target);
+        contarLista(); // Chama novamente a contagem de itens da lista, após a remoção
+    }
+});
 
 // EVENT LISTENER AO CLICAR NO BOTÃO "Adicionar Produto"
 btnAdicionar.addEventListener("click", adicionarProduto);
